@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DataCollectionManualTag</string>
+    <string name="reset">Start with a fresh DB.\n
+        (All the existing tables will be dropped.
+        Schema will be updated to the latest version)</string>
+    <string name="keep">Start with the existing DB.\n
+        (Data will be appended to the existing tables.)</string>
+</resources>

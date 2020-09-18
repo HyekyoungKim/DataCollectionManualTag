@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: "/>
+        <EditText
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=",     Y: "/>
+        <EditText
+            android:id="@+id/y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned|numberDecimal"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCollect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Collect Data Here!"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:onClick="onClickCollect"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/buttonShowData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Me The Data!"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:onClick="onClickShowData"/>
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear The Table!"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:onClick="onClickClear"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Me The Progress!"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:onClick="onClickProgress"/>
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Data Collection!"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="#88aabbff"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickFinish"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
